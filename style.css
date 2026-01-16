@@ -1,0 +1,80 @@
+/*  Global   */
+body,
+p,
+h1,
+ul,
+li,
+blockquote {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Vollkorn", Georgia, serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/*  Typography   */
+.font-1-s {
+  font: 500 1.2rem/1 "Vollkorn", Georgia, serif;
+}
+
+/* Estrutura */
+.estrutura {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 1fr;
+  box-sizing: border-box;
+  grid-template-areas:
+    "header header header"
+    "sidenav content ad"
+    "footer footer footer";
+}
+
+/* Header */
+.header {
+  background-color: #5882ff;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+  grid-area: header;
+}
+.header img {
+  width: 225px;
+}
+.header-links {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 35px;
+}
+.header-links li {
+  background-color: #3366ff;
+  padding: 10px;
+  border-radius: 4px;
+}
+.header-links a {
+  color: #ffffff;
+}
+@media (max-width: 760px) {
+  .header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .header-links {
+    gap: 15px;
+  }
+}
