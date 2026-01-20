@@ -86,7 +86,6 @@ img {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 3fr 1fr;
   box-sizing: border-box;
-
   grid-template-areas:
     "header header header"
     "sidenav content ad"
@@ -211,6 +210,7 @@ img {
 /* Content */
 .content {
   display: grid;
+  grid-area: content;
   grid-template-columns: repeat(2, 1fr);
   padding: 30px;
   gap: 35px;
@@ -294,4 +294,14 @@ img {
 }
 .content img:nth-of-type(3) {
   grid-column: 1 / -1;
+}
+
+/* Ad */
+.anuncios {
+  grid-area: ad;
+  background-color: #f7f7f7;
+  padding: 30px;
+}
+.anuncios img:nth-of-type(1) {
+  margin-bottom: 30px;
 }
