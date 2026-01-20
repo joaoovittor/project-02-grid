@@ -34,6 +34,52 @@ img {
     Georgia,
     serif;
 }
+.font-2-s {
+  font:
+    700 3.5rem/1 "Vollkorn",
+    Georgia,
+    serif;
+}
+.font-3-s {
+  font:
+    400 0.75rem/1.7 "Vollkorn",
+    Georgia,
+    serif;
+  font-style: italic;
+}
+.font-4-s {
+  font:
+    500 3rem/1 "Vollkorn",
+    Georgia,
+    serif;
+  font-style: italic;
+}
+.font-1-ab {
+  font:
+    100 1.215rem/1.5 "Vollkorn",
+    Georgia,
+    serif;
+}
+.font-2-ab {
+  font:
+    100 1.215rem/1.5 "Vollkorn",
+    Georgia,
+    serif;
+}
+.font-3-ab {
+  font:
+    500 1.4rem/1.5 "Vollkorn",
+    Georgia,
+    serif;
+  font-style: italic;
+}
+
+.font-4-ab {
+  font:
+    100 1.2rem/1 "Vollkorn",
+    Georgia,
+    serif;
+}
 
 /* Estrutura */
 .estrutura {
@@ -160,4 +206,92 @@ img {
   .sidenav ul {
     grid-template-columns: repeat(7, auto);
   }
+}
+
+/* Content */
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
+  gap: 35px;
+}
+
+.titulo h1 {
+  margin-bottom: 7px;
+  color: #5882ff;
+}
+.titulo span {
+  color: #5882ff;
+}
+.caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 30px;
+  align-items: self-start;
+}
+.caracteristicas span {
+  color: #6f93ff;
+  display: block;
+  justify-self: center;
+  align-self: flex-start;
+}
+.caracteristicas span:nth-of-type(1) {
+  background-color: #5882ff;
+  padding: 12px;
+  border-radius: 4px 4px 0 0;
+}
+.caracteristicas span:nth-of-type(2) {
+  padding: 6px 0px 6px 0;
+}
+.caracteristicas div {
+  box-shadow: 0px 1px 25px rgba(0, 0, 1, 0.233);
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+}
+.content p:nth-of-type(1) {
+  grid-column: 1 /-1;
+}
+.content p:nth-of-type(2) {
+  max-width: 200px;
+  color: #5882ff;
+}
+.content img:nth-of-type(1) {
+  grid-row: 3 / 5;
+  margin-top: 20px;
+}
+.content img:nth-of-type(2) {
+  align-self: self-end;
+}
+.content blockquote {
+  grid-column: 1 / -1;
+  text-align: center;
+  background-color: #5882ff;
+  padding: 30px;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.atributos {
+  display: grid;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #5882ff;
+  padding: 30px;
+}
+.atributos li {
+  color: #e7e7e7;
+  padding: 15px;
+  border-bottom: 2px solid #6f93ff;
+}
+.atributos li:nth-of-type(6) {
+  border-bottom: none;
+}
+.informacoes p:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+.informacoes p:nth-of-type(2) {
+  color: initial;
+  max-width: none;
+}
+.content img:nth-of-type(3) {
+  grid-column: 1 / -1;
 }
