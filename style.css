@@ -295,6 +295,13 @@ img {
 .content img:nth-of-type(3) {
   grid-column: 1 / -1;
 }
+@media (max-width: 415px) {
+  .content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+}
 
 /* Ad */
 .anuncios {
