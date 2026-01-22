@@ -113,7 +113,7 @@ img {
 
 /* Header */
 .header {
-  background-color: #5882ff;
+  background: linear-gradient(135deg, #4c79ff, #6f93ff);
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -129,10 +129,14 @@ img {
   grid-template-columns: repeat(3, max-content);
   gap: 35px;
 }
-.header-links li {
-  background-color: #3366ff;
+.header-links li a {
+  background: rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 4px;
+  transition: 0.1s;
+}
+.header-links li a:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 .header-links a {
   color: #ffffff;
@@ -154,6 +158,7 @@ img {
   justify-items: center;
   grid-area: sidenav;
 }
+
 .sidenav ul {
   display: grid;
   grid-template-columns: 1fr;
@@ -165,6 +170,10 @@ img {
   min-width: 70px;
   padding: 20px;
   box-shadow: 0px 1px 25px rgba(0, 0, 1, 0.233);
+  transition: 0.2s;
+}
+.sidenav li:hover {
+  background-color: #bd6ffd;
 }
 .sidenav img {
   max-width: 100px;
@@ -236,7 +245,7 @@ img {
   align-self: flex-start;
 }
 .caracteristicas span:nth-of-type(1) {
-  background-color: #5882ff;
+  background: linear-gradient(135deg, #4c79ff, #6f93ff);
   padding: 12px;
   border-radius: 4px 4px 0 0;
 }
@@ -258,6 +267,7 @@ img {
 .content img:nth-of-type(1) {
   grid-row: 3 / 5;
   margin-top: 20px;
+  align-self: self-end;
 }
 .content img:nth-of-type(2) {
   align-self: self-end;
@@ -265,7 +275,7 @@ img {
 .content blockquote {
   grid-column: 1 / -1;
   text-align: center;
-  background-color: #5882ff;
+  background: linear-gradient(135deg, #4c79ff, #6f93ff);
   padding: 30px;
   color: #ffffff;
   border-radius: 4px;
@@ -274,7 +284,7 @@ img {
   display: grid;
   align-items: center;
   border-radius: 4px;
-  background-color: #5882ff;
+  background: linear-gradient(135deg, #4c79ff, #6f93ff);
   padding: 30px;
 }
 .atributos li {
@@ -295,11 +305,14 @@ img {
 .content img:nth-of-type(3) {
   grid-column: 1 / -1;
 }
-@media (max-width: 415px) {
+@media (max-width: 420px) {
   .content {
     grid-template-columns: 1fr;
     text-align: center;
     justify-items: center;
+  }
+  .atributos {
+    justify-self: normal;
   }
 }
 
@@ -318,6 +331,6 @@ img {
   grid-area: footer;
   padding: 30px;
   text-align: center;
-  background-color: #5882ff;
+  background: linear-gradient(135deg, #4c79ff, #6f93ff);
   color: #ffffff;
 }
